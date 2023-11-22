@@ -1,3 +1,10 @@
+## Requirements
+
+* kind
+* docker
+* kubectl
+* krew
+
 ### Task
 
 [Source-Docs](https://docs.google.com/document/d/1aNIrZbt6vGVTtekMCbRJgi9IJ39dYaPHXqQ41kvZH-M/edit#heading=h.34m9ms77755b)

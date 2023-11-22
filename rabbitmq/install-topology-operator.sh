@@ -2,7 +2,7 @@
 
 kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.3.1/cert-manager.yaml
 
-kubectl wait --namespace ingress-nginx \
+kubectl wait --namespace cert-manager \
   --for=condition=ready pod \
   --selector=app.kubernetes.io/component=webhook \
   --timeout=90s
