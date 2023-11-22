@@ -35,3 +35,5 @@ kubectl wait --namespace ingress-nginx \
   --for=condition=ready pod \
   --selector=app.kubernetes.io/component=controller \
   --timeout=90s
+
+kubectl apply -f kind/yaml-templates/ingress-nginx-controller-ssl-passthrough.yaml
