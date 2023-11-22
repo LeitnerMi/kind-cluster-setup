@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 kubectl apply -f "https://github.com/rabbitmq/cluster-operator/releases/latest/download/cluster-operator.yml"
-kubectl krew install rabbitmq
+# kubectl krew install rabbitmq
 
 kubectl apply -f "rabbitmq/yaml-templates/basic-rabbitmq-cluster.yaml"
 

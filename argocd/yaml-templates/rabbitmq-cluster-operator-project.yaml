@@ -1,0 +1,11 @@
+project: default
+source:
+  repoURL: 'https://charts.bitnami.com/bitnami'
+  targetRevision: 3.10.5
+  chart: rabbitmq-cluster-operator
+destination:
+  namespace: rabbitmq
+  name: in-cluster
+syncPolicy:
+  syncOptions:
+    - CreateNamespace=true
