@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cat <<EOF | kind create cluster -n rabbitmq-pov --config=-
+cat <<EOF | kind create cluster -n rabbitmq-poc --config=-
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 nodes:
@@ -20,7 +20,7 @@ nodes:
     protocol: TCP
 EOF
 
-k8sstatus=$(kubectl cluster-info --context kind-rabbitmq-pov)
+k8sstatus=$(kubectl cluster-info --context kind-rabbitmq-poc)
 printf "\n $k8sstatus"
 
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/kind/deploy.yaml
