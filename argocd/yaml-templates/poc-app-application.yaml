@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: hello-world-cluster
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/LeitnerMi/rabbitmq-poc.git'
+    path: app/
+    targetRevision: main
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: hello-world-cluster
+  syncPolicy:
+    automated:
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
