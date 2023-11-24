@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: hello-world-cluster
+  name: hello-world-cluster-app
 spec:
   project: default
   source:
