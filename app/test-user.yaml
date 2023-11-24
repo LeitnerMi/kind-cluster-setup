@@ -6,6 +6,7 @@ metadata:
 spec:
   tags:
     - policymaker
+    - administrator
   rabbitmqClusterReference:
     name: hello-world
   importCredentialsSecret:
