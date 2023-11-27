@@ -28,12 +28,12 @@ printf "Wait for NGINX ingress to be installed\n"
 
 kubectl wait --namespace ingress-nginx \
   --for=condition=complete \
-  --timeout=30s \
+  --timeout=300s \
   job.batch/ingress-nginx-admission-create
 
 kubectl wait --namespace ingress-nginx \
   --for=condition=ready pod \
   --selector=app.kubernetes.io/component=controller \
-  --timeout=90s
+  --timeout=300s
 
 kubectl apply -f kind/yaml-templates/ingress-nginx-controller-ssl-passthrough.yaml

@@ -3,7 +3,7 @@
 * kind
 * docker
 * kubectl
-* krew
+* (krew)
 
 ### Task
 
