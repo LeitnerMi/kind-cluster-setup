@@ -12,5 +12,7 @@ fi
 /bin/bash rabbitmq/install-cluster-operator.sh
 /bin/bash rabbitmq/install-topology-operator.sh
 
+/bin/bash sealed-secrets/install-sealed-secrets-controller.sh
+
 /bin/bash argocd/install-argocd-operator.sh
 
