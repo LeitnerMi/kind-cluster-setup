@@ -1,9 +1,10 @@
+## To simply setup a k8s cluster with argocd and rabbitmq, switch to branch 'with-gitops-repo' and execute install-all.sh
+
 ## Requirements
 
 * kind
 * docker
 * kubectl
-* krew
 
 ### Task
 
